@@ -34,13 +34,6 @@ def draw_palette(palette):
         turtle.goto(random.randint(-200, 200), random.randint(-200, 200))
         turtle.pendown()
         turtle.dot(random.randint(10, 50))
-    
-    print("Would you like to draw another palette? (y/n)")
-    response = input()
-    if response.lower() == 'y':
-        main()
-    else:
-        print("Goodbye!")
 
 def main():
     character = input("Enter a character and where they're from (e.g., 'Elsa from Frozen'): ")
