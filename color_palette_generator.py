@@ -39,12 +39,6 @@ def draw_palette(palette):
         turtle.pendown()
         turtle.dot(random.randint(10, 50))
 
-def clear_screen():
-    """Clear the turtle screen and reset settings."""
-    turtle.bgcolor('black')
-    turtle.colormode(255)
-    turtle.speed(0)
-
 def run():
     character = input("Enter a character and where they're from (e.g., 'Link from Zelda'): ")
     try:
@@ -57,14 +51,13 @@ def run():
         print(f"Palette: {palette}")
 
         print("Drawing color palette...")
-        clear_screen()
         draw_palette(palette)
 
         print("Would you like to draw another palette? (y/n)")
         response = input()
         if response.lower() == 'y':
             turtle.reset()
-            run()  # Restart for a new character
+            run()  # Restart for a new input
         else:
             print("Goodbye!")
             turtle.clearscreen()
