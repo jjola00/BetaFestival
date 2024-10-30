@@ -1,0 +1,4 @@
+# packages program depends on
+requests
+pillow
+colorthief
