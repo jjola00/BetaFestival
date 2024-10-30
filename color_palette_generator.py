@@ -60,6 +60,7 @@ def run():
         print("Would you like to draw another palette? (y/n)")
         response = input()
         if response.lower() == 'y':
+            turtle.clear()
             main()
         if response.lower() == 'n':
             clear_screen()
