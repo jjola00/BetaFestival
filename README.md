@@ -8,6 +8,9 @@
 How to run project:
 
   #Go to root directory, run:
+  
     pip install -r requirements.txt
+    
   #To run project
+  
     python color_palette_generator.py
